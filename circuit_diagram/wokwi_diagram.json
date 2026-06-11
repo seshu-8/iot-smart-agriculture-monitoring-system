@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Seshu Babu",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -140, "left": -120, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -160, "left": 120, "attrs": { "label": "Soil Moisture" } },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": 160, "left": -120, "attrs": { "label": "Water Level" } },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": 0, "left": 140, "attrs": { "label": "Light (LDR)" } },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 160, "left": 140, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 20, "left": -80, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    
+    [ "esp:GND.1", "dht1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.1", "dht1:VCC", "red", [ "v0" ] ],
+    [ "esp:15", "dht1:SDA", "blue", [ "v0" ] ],
+
+    [ "esp:GND.1", "pot1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.1", "pot1:VCC", "red", [ "v0" ] ],
+    [ "esp:34", "pot1:SIG", "green", [ "v0" ] ],
+
+    [ "esp:GND.1", "pot2:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.1", "pot2:VCC", "red", [ "v0" ] ],
+    [ "esp:32", "pot2:SIG", "purple", [ "v0" ] ],
+
+    [ "esp:GND.2", "pot3:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.2", "pot3:VCC", "red", [ "v0" ] ],
+    [ "esp:35", "pot3:SIG", "orange", [ "v0" ] ],
+
+    [ "esp:GND.2", "relay1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3.2", "relay1:VCC", "red", [ "v0" ] ],
+    [ "esp:2", "relay1:IN", "yellow", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
