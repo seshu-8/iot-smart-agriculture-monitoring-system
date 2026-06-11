@@ -39,7 +39,7 @@ pip install -r requirements.txt
 python main.py
 
 
-📊 Sample System Output Logs
+### 📊 Sample System Output Logs
 [CYCLE #02] Profile: DRY_SOIL | Time: 2026-06-08 22:30:12
  -> Env Matrix : Temp: 27.4°C | Humidity: 62.1%
  -> Soil Status: Moisture: 28.3% | Tank Level: 84.2%
@@ -51,7 +51,7 @@ python main.py
  -> Soil Status: Moisture: 19.5% | Tank Level: 12.1%
  -> System State: Actuator Pump is INACTIVE (OFF)
    [CRITICAL] Low moisture detected but blocked by Low Water Safety Lockout!
-🎓 Learning Outcomes
+### 🎓 Learning Outcomes
 Developed embedded firmware applications for the ESP32 using C++.
 
 Designed localized edge computing logic to protect physical hardware assets from dry-run damage.
