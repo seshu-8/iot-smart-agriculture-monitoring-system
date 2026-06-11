@@ -12,6 +12,7 @@ Manual field monitoring across large agricultural operations leads to significan
 - **Local Data Pipeline:** A standalone Python engine logs structured datasets to local storage for long-term historical analysis.
 
 ## 📦 Project Structural Layout
+---
 ├── firmware/
 │   └── smart_agri_esp32.ino    # Production embedded C++ firmware for the ESP32
 ├── python_simulation/
@@ -21,7 +22,7 @@ Manual field monitoring across large agricultural operations leads to significan
 ├── main.py                     # Central Python pipeline execution engine
 ├── requirements.txt            # Python environment dependency configuration
 └── .gitignore                  # Excludes temporary execution files and keys
-
+---
 
 ## 🚀 Installation & System Configuration
 
