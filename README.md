@@ -22,15 +22,22 @@ Manual field monitoring across large agricultural operations leads to significan
 ## 📦 Project Structural Layout
 
 ```text
-├── firmware/
-│   └── smart_agri_esp32.ino    # Production embedded C++ firmware for the ESP32
-├── python_simulation/
-│   └── mock_telemetry_gen.py   # Automated data validation generator
+IoT-Smart-Agriculture-Monitoring-System/
+├── circuit_diagram/
+│   └── wokwi_diagram.json
 ├── data/
-│   └── telemetry_logs.csv      # Appended historical record log file
-├── main.py                     # Central Python pipeline execution engine
-├── requirements.txt            # Python environment dependency configuration
-└── .gitignore                  # Excludes temporary execution files and keys
+│   └── telemetry_logs.csv
+├── firmware/
+│   └── smart_agri_esp32.ino
+├── images/
+│   ├── wokwi_pump_active.png
+│   ├── thingspeak_dashboard.png
+│   └── vscode_pipeline.png
+├── venv/
+├── .gitignore
+├── main.py
+├── README.md
+└── requirements.txt
 ```
 
 ---
