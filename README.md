@@ -33,11 +33,12 @@ Manual field monitoring across large agricultural operations leads to significan
 
 ### 2. Local Analytics Pipeline Setup
 Run these setup commands in your terminal interface:
-```bash
 python3 -m venv venv
 source venv/activate  # On Windows use: .\venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
+
+
 📊 Sample System Output Logs
 [CYCLE #02] Profile: DRY_SOIL | Time: 2026-06-08 22:30:12
  -> Env Matrix : Temp: 27.4°C | Humidity: 62.1%
